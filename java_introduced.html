@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Interior Designer Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio! I am passionate about creating beautiful and functional spaces that inspire. With years of experience in interior design, I specialize in...</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="before_project1.jpg" alt="Project 1 Before" class="project-image" id="project1">
+                <h3>Project Title 1</h3>
+                <p>Description of the project...</p>
+                <button onclick="swapImage('project1', 'before_project1.jpg', 'after_project1.jpg')">Before/After</button>
+            </div>
+            <div class="project">
+                <img src="before_project2.jpg" alt="Project 2 Before" class="project-image" id="project2">
+                <h3>Project Title 2</h3>
+                <p>Description of the project...</p>
+                <button onclick="swapImage('project2', 'before_project2.jpg', 'after_project2.jpg')">Before/After</button>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: yourname@example.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 123 Interior Design Street, City, Country</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--  Explanation 
+HTML Modifications:
+
+Each project now has an image with a unique ID and a button that triggers the image swap when clicked.
+The onclick attribute in the button calls the swapImage function, passing the project ID and the names of the before and after images.
+JavaScript:
+
+The swapImage function checks the current source of the image. If it matches the before image, it changes it to the after image, and vice versa.
+Additional Notes
+Ensure that you have the appropriate before and after images saved as before_project1.jpg, after_project1.jpg, etc.
+You can style the buttons and images using your existing CSS file to improve the presentation.
+-->
